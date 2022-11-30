@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Etch a Sketch</title>
+</head>
+<body>
+    <div id="body">
+        <div class="buttons">
+            <div class="top-btn">
+                <button onclick="changeColor('black')">Black Pen</button>
+                <button onclick="changeColor('red')">Red Pen</button>
+                <button onclick="changeColor('blue')">Blue Pen</button>
+                <button onclick="changeColor('random')">Random Color Pen</button>
+                <button onclick="changeColor('white')">Eraser</button>
+                <button onclick="resetBoard()">Reset</button>
+            </div>
+            <br>
+            <div class="bot-btn">
+                <label>Size of the board: </label>
+                <input type="text" placeholder="Size of Game" value="16" onchange="newSize(this.value)" />
+                <button>Change Size</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
